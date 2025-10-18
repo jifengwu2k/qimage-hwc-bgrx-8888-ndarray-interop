@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qimage-hwc-bgrx-8888-ndarray-interop"
+version = "0.1.0a0"
+description = "Zero-copy conversion between Qt QImage (in `Format_RGB32`/`Format_ARGB32`) and NumPy ndarray (in HWC BGRX 8888 format)."
+readme = "README.md"
+requires-python = ">=2"
+license = "MIT"
+authors = [
+  { name="Jifeng Wu", email="jifengwu2k@gmail.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "detect-qt-binding",
+    "numpy"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jifengwu2k/qimage-hwc-bgrx-8888-ndarray-interop"
+"Bug Tracker" = "https://github.com/jifengwu2k/qimage-hwc-bgrx-8888-ndarray-interop/issues"
